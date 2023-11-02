@@ -12,19 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using _320PracApp.Pages;
 
-namespace _320PracApp
+namespace _320PracApp.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для StudentsPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StudentsPage : Page
     {
-        public MainWindow()
+        public StudentsPage()
         {
             InitializeComponent();
-            MainFrame.NavigationService.Navigate(new AuthorisPage());
         }
     }
 }

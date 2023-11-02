@@ -71,10 +71,59 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\DepartmentsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DiscPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EmplPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EmplsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\GuestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\StudentsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TeachMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\AuthorisPage.xaml.cs">
       <DependentUpon>AuthorisPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DepartmentsPage.xaml.cs">
+      <DependentUpon>DepartmentsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DiscPage.xaml.cs">
+      <DependentUpon>DiscPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EmplPage.xaml.cs">
+      <DependentUpon>EmplPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EmplsPage.xaml.cs">
+      <DependentUpon>EmplsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GuestPage.xaml.cs">
+      <DependentUpon>GuestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StudentsPage.xaml.cs">
+      <DependentUpon>StudentsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TeachMainPage.xaml.cs">
+      <DependentUpon>TeachMainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
