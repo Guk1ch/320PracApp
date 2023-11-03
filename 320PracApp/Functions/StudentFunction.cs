@@ -16,5 +16,16 @@ namespace _320PracApp.Functions
             return new ObservableCollection<Student>(BdConnection.connection.Student.Where(a => a.RegNumber == exam.RegNumber ).ToList());
 
         }
+        public static void AddStudent(int id, string spec, string surname)
+        {
+            Student student = new Student();
+
+            student.RegNumber = id;
+            student.SpecializationNumber = spec;
+            student.Surname = surname;
+
+            BdConnection.connection.Student.Add(student);
+            BdConnection.connection.SaveChanges();
+        }
     }
 }
