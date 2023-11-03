@@ -29,6 +29,37 @@
         </Grid.RowDefinitions>
         <TextBlock Text="Список студентов" FontSize="40" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Center"/>
         <Button x:Name="btnBack" Content="Назад" Grid.Column="0"/>
-        <Button x:Name="btnAdd" Content="Добавить" Grid.Column="0" Grid.Row="7"/>
+        <Button x:Name="btnAdd" Content="Добавить" Grid.Column="5" Grid.Row="0"/>
+        <TextBlock Text="{Binding ex.Date, StringFormat= MM/dd/yy}" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock Text="{Binding ex.Discipline.Name}" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBlock Text="{Binding ex.Auditorium}" Grid.Column="4" Grid.Row="1"/>
+        <ListView x:Name="LvStudents" 
+                  ItemsSource="{Binding studentsList}" 
+                  Grid.Row="2" Grid.RowSpan="12"
+                  Grid.Column="0" Grid.ColumnSpan="13"
+                  SelectionChanged="LvStudents_SelectionChanged">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="2"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="300">
+                        <TextBlock Text="{Binding Surname}" 
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       FontSize="20" 
+                                       Foreground="Black"
+                                       TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding SpecializationNumber}"   HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       FontSize="20" 
+                                       Foreground="Black"
+                                       TextWrapping="Wrap"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

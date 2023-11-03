@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="49b0377ad1064a59bbfed5bfcf61875a" Name="Diagram1">
+        <EntityTypeShape EntityType="PRUCHModel.Academician" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Animal_Manakov" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.ApplicationForm" Width="1.5" PointX="10.5" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Control_Manakov" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Countries_Manakov" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Department" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Discipline" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Employee" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Engineer" Width="1.5" PointX="7.5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Exam" Width="1.5" PointX="12.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Faculcy" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Flowers_Manakov" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Learner" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Specialization" Width="1.5" PointX="5.25" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Student" Width="1.5" PointX="7.5" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Teacher" Width="1.5" PointX="7.5" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.ZavDepartment" Width="1.5" PointX="7.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRUCHModel.Licei" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="PRUCHModel.FK_ApplicationForm_Discipline" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_ApplicationForm_Specialization1" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_Department_Faculcy" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_Discipline_Department1" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_Employee_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_Specialization_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_Exam_Discipline" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_Employee_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_Engineer_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_Exam_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_Teacher_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_ZavDepartment_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_Exam_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="PRUCHModel.FK_Student_Specialization" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

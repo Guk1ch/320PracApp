@@ -28,6 +28,39 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock Text="Список дисциплин" FontSize="40" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="4" HorizontalAlignment="Center"/>
-        <Button x:Name="btnBack" Content="Назад" Grid.Column="0"/>
+        <Button x:Name="btnBack" Content="Назад" Grid.Column="0" Click="btnBack_Click"/>
+        <ListView x:Name="LvExams" 
+                  ItemsSource="{Binding examsList}" 
+                  Grid.Row="2" Grid.RowSpan="12"
+                  Grid.Column="0" Grid.ColumnSpan="13"
+                  SelectionChanged="LvExams_SelectionChanged">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="2"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="300">
+                        <TextBlock Text="{Binding Discipline.Name}" 
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       FontSize="20" 
+                                       Foreground="Black"
+                                       TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding Date}"   HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       FontSize="20" 
+                                       Foreground="Black"
+                                       TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding Auditorium}"  HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       FontSize="20" 
+                                       Foreground="Black"
+                                       TextWrapping="Wrap"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>
